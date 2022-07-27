@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+
+import slider from './components/slider';
+import Service from './components/Service';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <slider />
+      <div className="container text-center my-5" >
+      <h1>Product Store</h1>
+     
+        <div className="row">
+        <Service />
+        </div>
+   
+      </div>
+
+    </>
   );
 }
 
